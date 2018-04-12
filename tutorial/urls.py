@@ -13,6 +13,5 @@ urlpatterns = [
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^schema/$', schema_view),
     url(r'^docs/', include_docs_urls(title=API_TITLE, description=API_DESCRIPTION)),
-    path('admin/', admin.site.urls),
-    
+    path('admin/', admin.site.urls), 
 ]
